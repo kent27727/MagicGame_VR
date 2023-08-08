@@ -1,0 +1,544 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4154751201306319676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4154751201306319679}
+  - component: {fileID: 4154751201306319678}
+  m_Layer: 0
+  m_Name: Movement Recognizer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4154751201306319679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154751201306319676}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4154751201306319678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4154751201306319676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e37754716119aa4d8988076e984156b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSource: {fileID: 0}
+  newPositionThresholdDistance: 0.05
+  debugCubePrefab: {fileID: 7383586222588490605, guid: 5f9a8e3a03871b340a1a0aea2f8263b4,
+    type: 3}
+  creationMode: 0
+  newGestureName: 
+  recognitionThreshold: 0.9
+  trainingSet:
+  - Points:
+    - X: -0.39977783
+      Y: -0.45648754
+      StrokeID: 0
+    - X: -0.40922537
+      Y: -0.3415142
+      StrokeID: 0
+    - X: -0.4218486
+      Y: -0.22686735
+      StrokeID: 0
+    - X: -0.4385922
+      Y: -0.11273659
+      StrokeID: 0
+    - X: -0.4574947
+      Y: 0.0010615217
+      StrokeID: 0
+    - X: -0.47642195
+      Y: 0.11485874
+      StrokeID: 0
+    - X: -0.4907891
+      Y: 0.22930253
+      StrokeID: 0
+    - X: -0.49716622
+      Y: 0.34446612
+      StrokeID: 0
+    - X: -0.44631332
+      Y: 0.32348493
+      StrokeID: 0
+    - X: -0.37030372
+      Y: 0.23680425
+      StrokeID: 0
+    - X: -0.30072105
+      Y: 0.14479135
+      StrokeID: 0
+    - X: -0.22982688
+      Y: 0.05379037
+      StrokeID: 0
+    - X: -0.16142923
+      Y: -0.039001
+      StrokeID: 0
+    - X: -0.095574275
+      Y: -0.1335454
+      StrokeID: 0
+    - X: -0.036163755
+      Y: -0.14685863
+      StrokeID: 0
+    - X: 0.0009328648
+      Y: -0.03783615
+      StrokeID: 0
+    - X: 0.048430685
+      Y: 0.067078866
+      StrokeID: 0
+    - X: 0.10366425
+      Y: 0.16834567
+      StrokeID: 0
+    - X: 0.16130623
+      Y: 0.26827326
+      StrokeID: 0
+    - X: 0.22259271
+      Y: 0.36600265
+      StrokeID: 0
+    - X: 0.28614625
+      Y: 0.46226957
+      StrokeID: 0
+    - X: 0.3546175
+      Y: 0.4791384
+      StrokeID: 0
+    - X: 0.39494908
+      Y: 0.3781718
+      StrokeID: 0
+    - X: 0.3951264
+      Y: 0.26287648
+      StrokeID: 0
+    - X: 0.38611495
+      Y: 0.14786814
+      StrokeID: 0
+    - X: 0.37689757
+      Y: 0.032876205
+      StrokeID: 0
+    - X: 0.36960402
+      Y: -0.082242385
+      StrokeID: 0
+    - X: 0.36734453
+      Y: -0.1975811
+      StrokeID: 0
+    - X: 0.37029123
+      Y: -0.31283537
+      StrokeID: 0
+    - X: 0.37787762
+      Y: -0.4279314
+      StrokeID: 0
+    - X: 0.37239596
+      Y: -0.4237292
+      StrokeID: 0
+    - X: 0.39487624
+      Y: -0.3121441
+      StrokeID: 0
+    Name: M
+  - Points:
+    - X: -0.36758628
+      Y: -0.51552826
+      StrokeID: 0
+    - X: -0.3658505
+      Y: -0.417188
+      StrokeID: 0
+    - X: -0.36310524
+      Y: -0.31887358
+      StrokeID: 0
+    - X: -0.35953325
+      Y: -0.22058403
+      StrokeID: 0
+    - X: -0.35511404
+      Y: -0.122327775
+      StrokeID: 0
+    - X: -0.3500263
+      Y: -0.024104763
+      StrokeID: 0
+    - X: -0.34573513
+      Y: 0.07414057
+      StrokeID: 0
+    - X: -0.344519
+      Y: 0.17248864
+      StrokeID: 0
+    - X: -0.34787944
+      Y: 0.27075988
+      StrokeID: 0
+    - X: -0.35206854
+      Y: 0.36902547
+      StrokeID: 0
+    - X: -0.34306538
+      Y: 0.4360633
+      StrokeID: 0
+    - X: -0.27702287
+      Y: 0.3631784
+      StrokeID: 0
+    - X: -0.22690597
+      Y: 0.27855903
+      StrokeID: 0
+    - X: -0.174205
+      Y: 0.19553435
+      StrokeID: 0
+    - X: -0.11927225
+      Y: 0.114016026
+      StrokeID: 0
+    - X: -0.058860704
+      Y: 0.036399897
+      StrokeID: 0
+    - X: 0.0016244699
+      Y: -0.041147184
+      StrokeID: 0
+    - X: 0.06662029
+      Y: -0.114967
+      StrokeID: 0
+    - X: 0.12871005
+      Y: -0.19124642
+      StrokeID: 0
+    - X: 0.19061822
+      Y: -0.2676737
+      StrokeID: 0
+    - X: 0.2522532
+      Y: -0.34432194
+      StrokeID: 0
+    - X: 0.31496766
+      Y: -0.42008743
+      StrokeID: 0
+    - X: 0.36066756
+      Y: -0.39460328
+      StrokeID: 0
+    - X: 0.39284846
+      Y: -0.30210707
+      StrokeID: 0
+    - X: 0.38812545
+      Y: -0.20386493
+      StrokeID: 0
+    - X: 0.385243
+      Y: -0.10557229
+      StrokeID: 0
+    - X: 0.38464087
+      Y: -0.0072186007
+      StrokeID: 0
+    - X: 0.38414523
+      Y: 0.09113567
+      StrokeID: 0
+    - X: 0.38338766
+      Y: 0.18948835
+      StrokeID: 0
+    - X: 0.38409328
+      Y: 0.2878363
+      StrokeID: 0
+    - X: 0.3832968
+      Y: 0.38616356
+      StrokeID: 0
+    - X: 0.38024077
+      Y: 0.48447168
+      StrokeID: 0
+    Name: N
+  - Points:
+    - X: -0.0777055
+      Y: 0.34469777
+      StrokeID: 0
+    - X: -0.17628874
+      Y: 0.33750388
+      StrokeID: 0
+    - X: -0.26945558
+      Y: 0.3043222
+      StrokeID: 0
+    - X: -0.34963268
+      Y: 0.24617007
+      StrokeID: 0
+    - X: -0.40523696
+      Y: 0.16499233
+      StrokeID: 0
+    - X: -0.45262474
+      Y: 0.077887215
+      StrokeID: 0
+    - X: -0.4935294
+      Y: -0.0126208225
+      StrokeID: 0
+    - X: -0.5086046
+      Y: -0.1099944
+      StrokeID: 0
+    - X: -0.510549
+      Y: -0.20827368
+      StrokeID: 0
+    - X: -0.48564953
+      Y: -0.30442414
+      StrokeID: 0
+    - X: -0.43040282
+      Y: -0.38451958
+      StrokeID: 0
+    - X: -0.35858983
+      Y: -0.45253935
+      StrokeID: 0
+    - X: -0.27573732
+      Y: -0.50227493
+      StrokeID: 0
+    - X: -0.17714329
+      Y: -0.51427954
+      StrokeID: 0
+    - X: -0.07859787
+      Y: -0.5042434
+      StrokeID: 0
+    - X: 0.01844208
+      Y: -0.4840543
+      StrokeID: 0
+    - X: 0.11457994
+      Y: -0.45911136
+      StrokeID: 0
+    - X: 0.21093154
+      Y: -0.43500197
+      StrokeID: 0
+    - X: 0.30087167
+      Y: -0.39313862
+      StrokeID: 0
+    - X: 0.380405
+      Y: -0.3348961
+      StrokeID: 0
+    - X: 0.441273
+      Y: -0.25833955
+      StrokeID: 0
+    - X: 0.47455752
+      Y: -0.16635348
+      StrokeID: 0
+    - X: 0.47683445
+      Y: -0.06844566
+      StrokeID: 0
+    - X: 0.45570207
+      Y: 0.02848194
+      StrokeID: 0
+    - X: 0.42163274
+      Y: 0.12133935
+      StrokeID: 0
+    - X: 0.36830288
+      Y: 0.20431934
+      StrokeID: 0
+    - X: 0.29613578
+      Y: 0.2720441
+      StrokeID: 0
+    - X: 0.21279176
+      Y: 0.32571414
+      StrokeID: 0
+    - X: 0.120274045
+      Y: 0.36006957
+      StrokeID: 0
+    - X: 0.022643663
+      Y: 0.3718536
+      StrokeID: 0
+    - X: -0.07641686
+      Y: 0.36590508
+      StrokeID: 0
+    - X: -0.08301136
+      Y: 0.4147901
+      StrokeID: 0
+    Name: O
+  - Points:
+    - X: -0.42821592
+      Y: 0.30559838
+      StrokeID: 0
+    - X: -0.4127788
+      Y: 0.2067184
+      StrokeID: 0
+    - X: -0.41730368
+      Y: 0.106635235
+      StrokeID: 0
+    - X: -0.42801166
+      Y: 0.0070492188
+      StrokeID: 0
+    - X: -0.44903862
+      Y: -0.09090099
+      StrokeID: 0
+    - X: -0.47114894
+      Y: -0.18860826
+      StrokeID: 0
+    - X: -0.47373548
+      Y: -0.2711724
+      StrokeID: 0
+    - X: -0.3739331
+      Y: -0.26251486
+      StrokeID: 0
+    - X: -0.27392226
+      Y: -0.25803566
+      StrokeID: 0
+    - X: -0.17410591
+      Y: -0.266624
+      StrokeID: 0
+    - X: -0.07424214
+      Y: -0.2746454
+      StrokeID: 0
+    - X: 0.025613887
+      Y: -0.2827589
+      StrokeID: 0
+    - X: 0.1252417
+      Y: -0.29331425
+      StrokeID: 0
+    - X: 0.2244498
+      Y: -0.3071903
+      StrokeID: 0
+    - X: 0.32268554
+      Y: -0.32636192
+      StrokeID: 0
+    - X: 0.4202299
+      Y: -0.34920657
+      StrokeID: 0
+    - X: 0.5083388
+      Y: -0.36443883
+      StrokeID: 0
+    - X: 0.45441508
+      Y: -0.28000334
+      StrokeID: 0
+    - X: 0.42995682
+      Y: -0.18357073
+      StrokeID: 0
+    - X: 0.41740713
+      Y: -0.084238715
+      StrokeID: 0
+    - X: 0.416095
+      Y: 0.015656583
+      StrokeID: 0
+    - X: 0.42585132
+      Y: 0.1151797
+      StrokeID: 0
+    - X: 0.4462103
+      Y: 0.2131299
+      StrokeID: 0
+    - X: 0.44513857
+      Y: 0.3001314
+      StrokeID: 0
+    - X: 0.36064735
+      Y: 0.3424347
+      StrokeID: 0
+    - X: 0.2608306
+      Y: 0.33384794
+      StrokeID: 0
+    - X: 0.16072518
+      Y: 0.3302418
+      StrokeID: 0
+    - X: 0.06080948
+      Y: 0.33427083
+      StrokeID: 0
+    - X: -0.038666412
+      Y: 0.34585705
+      StrokeID: 0
+    - X: -0.1376063
+      Y: 0.3615289
+      StrokeID: 0
+    - X: -0.23592125
+      Y: 0.38074058
+      StrokeID: 0
+    - X: -0.33318245
+      Y: 0.40476915
+      StrokeID: 0
+    Name: Square
+  - Points:
+    - X: -0.69273746
+      Y: -0.20254722
+      StrokeID: 0
+    - X: -0.68778884
+      Y: -0.1570939
+      StrokeID: 0
+    - X: -0.6828402
+      Y: -0.111640565
+      StrokeID: 0
+    - X: -0.6601676
+      Y: -0.07204176
+      StrokeID: 0
+    - X: -0.6370687
+      Y: -0.032583732
+      StrokeID: 0
+    - X: -0.6071857
+      Y: 0.0007202416
+      StrokeID: 0
+    - X: -0.57015854
+      Y: 0.02754341
+      StrokeID: 0
+    - X: -0.5331314
+      Y: 0.054366577
+      StrokeID: 0
+    - X: -0.49287018
+      Y: 0.07469098
+      StrokeID: 0
+    - X: -0.4491446
+      Y: 0.088053875
+      StrokeID: 0
+    - X: -0.40541902
+      Y: 0.10141676
+      StrokeID: 0
+    - X: -0.36089754
+      Y: 0.106696226
+      StrokeID: 0
+    - X: -0.31540546
+      Y: 0.10211756
+      StrokeID: 0
+    - X: -0.26991338
+      Y: 0.09753889
+      StrokeID: 0
+    - X: -0.22643554
+      Y: 0.085915744
+      StrokeID: 0
+    - X: -0.18539949
+      Y: 0.06575301
+      StrokeID: 0
+    - X: -0.14851545
+      Y: 0.039505232
+      StrokeID: 0
+    - X: -0.11598845
+      Y: 0.0075092036
+      StrokeID: 0
+    - X: -0.08663891
+      Y: -0.027490998
+      StrokeID: 0
+    - X: -0.050826598
+      Y: -0.054595068
+      StrokeID: 0
+    - X: -0.0069502713
+      Y: -0.056293067
+      StrokeID: 0
+    - X: 0.023924842
+      Y: -0.024559328
+      StrokeID: 0
+    - X: 0.043164372
+      Y: 0.01689807
+      StrokeID: 0
+    - X: 0.07316311
+      Y: 0.050507892
+      StrokeID: 0
+    - X: 0.114932045
+      Y: 0.04952037
+      StrokeID: 0
+    - X: 0.14311168
+      Y: 0.014479527
+      StrokeID: 0
+    - X: 0.15817186
+      Y: -0.028659448
+      StrokeID: 0
+    - X: 0.19090067
+      Y: -0.0493673
+      StrokeID: 0
+    - X: 0.22417557
+      Y: -0.019302381
+      StrokeID: 0
+    - X: 0.25107577
+      Y: 0.01765538
+      StrokeID: 0
+    - X: 0.28361008
+      Y: 0.04920694
+      StrokeID: 0
+    - X: 0.29096493
+      Y: 0.047493648
+      StrokeID: 0
+    Name: Wave
