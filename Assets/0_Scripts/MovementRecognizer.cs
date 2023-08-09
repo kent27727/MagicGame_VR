@@ -32,11 +32,14 @@ public class MovementRecognizer : MonoBehaviour
     void AddPointFromMovementSource()
     {
         positionsList.Add(movementSource.position);
-        if (debugCubePrefab)
-        {
-            GameObject spawnedDebugCube = Instantiate(debugCubePrefab, movementSource.position, Quaternion.identity);
-            Destroy(spawnedDebugCube, 5);
-        }
+
+        //if you want see shapes, you can run it.
+
+        //if (debugCubePrefab)
+        //{
+        //    GameObject spawnedDebugCube = Instantiate(debugCubePrefab, movementSource.position, Quaternion.identity);
+        //    Destroy(spawnedDebugCube, 5);
+        //}
     }
 
     void UpdateMovement()
